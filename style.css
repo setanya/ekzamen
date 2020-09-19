@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2? family = EB + Garamond & display = swap');
+/*семейство шрифтов: 'EB Garamond', serif; */
+*{
+    margin: 0 auto;
+    padding: 0px auto;
+    font-family: "Garamond";
+}
+
+#big_container{
+    width: 95%;
+    margin-top: 1%;
+    /*border: 1px solid blue;*/
+}
+
+/*block menu */
+.header_menu{
+    width: 100%;
+    /*border: 1px solid rebeccapurple;*/
+}
+
+.logo{
+    margin-left: 2%;
+}
+
+.header_menu a{
+    font-weight: bold;
+}
+
+.menu{
+    margin-right: 0;
+    margin-left: 1%;
+    width: 346px;
+}
+
+.header_icon{
+    display: inline-flex;
+    margin-right: 1%;
+}
+
+/*block hello */
+#hello{
+    border-top: 2px solid grey;;
+    border-bottom:2px solid grey;
+}
+
+.pickher img{
+    width: 100%;
+    height: 757px;
+}
+
+.hello_block{
+    align-self: center;
+}
+
+.knopka{
+    width: 110px;
+    margin-top: 8%;
+}
+
+.text_big{
+    font-size: 19px;
+    text-align: justify;
+}
+
+.text_smoll{
+    font-size: 17px;
+    text-align: justify;
+}
+
+/*block story */
+#story{
+    border-bottom:2px solid grey;
+}
+
+.foto_story img{
+    height: 475px;
+}
+.storys{
+    align-self: center;
+}
+
+.text_story{
+    padding-left: 8%;
+}
+
+/*block gallery */
+.gallery_block{
+    padding: 4%;
+}
+
+#flex_gallery{
+    display: flex;
+    height: 283px;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.textCarusel {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.img2,.img2,.img3{
+    display: block;
+}
+
+.text_galery{
+    text-align: center;
+    position: relative;
+    top: 24%;
+    color: cornsilk;
+    display: none;
+}
+
+.textCarusel:hover .text_galery{
+    display: block;  
+}
+
+.knopka_gallery{
+    height: 50px;
+    border-radius: 7px;
+    width: 100px;
+    margin-top: 6%;
+    background-color: initial;
+    color: cornsilk;
+    border: 1px solid cornsilk;
+}
+
+/*strelka */
+#strelka{
+    display: none;
+}
+
+#carouselExampleControls :hover #strelka{
+    display:block;
+}
+
+/*features */
+.bloc_features{
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.features{
+    text-align: center;
+    padding-top: 55px;
+    font-size: 17px;
+    height: 300px;
+}
+
+.features h3{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-bottom: 0px;
+}
+
+.Five, .Two{
+    border-left:2px solid grey;
+    border-right: 2px solid grey;
+}
+
+.One, .Two, .Three{
+    border-bottom: 2px solid grey;
+}
+
+/*forma*/
+.forma{
+    font-weight: bold;
+    font-size: 17px;
+    padding-bottom: 3%;
+    border-bottom: 2px solid grey;
+}
+
+.checkBox{
+    margin-left: 1%;
+}
+
+.button_sent{
+    margin-right: 1%;
+}
+
+.contact{
+    margin-left: 3%;
+}
+
+footer{
+    width: 540px;
+    padding-top: 6%;
+    padding-bottom: 5% ;
+    text-align: center;
+}
+
+.link{
+    padding: 1%;
+    border-radius: 50%;
+    border: 2px solid grey;
+}
+
+.footer a{
+    padding: 3%;
+}
+
+a .link:hover{
+    background:rgb(226, 226, 226);
+}
+
+.footer_icon{
+    width: 30px;
+    height: 30px;
+    border:1px solid gray;
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 0px;
+    font-size: 21px;
+}
+
+.copi{
+    padding-top: 5%;
+}
+
+.copyright{
+    margin-left: 1%;
+    font-size: 21px;
+}
+
+.block_copy{
+    padding-top: 30px;
+}
+
+@media(max-width: 600px){
+    .header_icon{
+        display: none;
+    }
+
+    .pickher img{
+        height: 490px;
+    }
+
+    .hello_block{
+        order: 1;
+    }
+
+    .card-body.text-block{
+        padding-left: 45px !important;
+    }
+
+    /* */
+    .foto_story img{
+        height: 380px;
+    }
+
+    .knopka{
+        margin-bottom: 4%;
+        margin-top: 4%;
+    }
+
+    .storys{
+        order: 1;
+    }
+
+    /*block gallery */
+    .img2, .img3{
+        width: 0;
+    }
+
+    .img1{
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+
+    .features{
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .Two, .Four{
+        border-left:none;
+        border-right: none;
+    }
+
+    .Five{
+        border-right:none;
+        border-left: none;
+        
+    }
+
+    .Six, .Four, .Five{
+        border-bottom: 2px solid grey;
+    }
+}
+    
+@media(max-width: 767px){
+    .hello_block{
+        order: 1;
+    }
+    
+    .storys{
+        order: 1;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 850px){
+    .header_icon{
+        display: none;
+    }
+
+    .pickher img{
+        height: 598px;
+    }
+
+    .foto_story img{
+        height: 475px;
+    }
+
+    .knopka{
+        margin-bottom: 4%;
+        margin-top: 4%;
+    }
+
+    /*block gallery */
+    .img3{
+        width: 0;
+    }
+
+    .features{
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+
+    .Two{
+        border-right: none;
+    }
+
+    .Four{
+        border-left:2px solid grey;
+        border-bottom: 2px solid grey;
+    }
+    
+    .Five{
+        border-left:none;
+    }
+}
+
+@media  (max-width: 992px){
+    .header_menu a{
+        padding: 3px;
+    }
+}
